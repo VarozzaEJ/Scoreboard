@@ -11,36 +11,35 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="m-3 p-3">
+<body class="m-3 p-3" id="wholePage">
     <header class="bg-dark text-light ">
         <div class="container-fluid">
             <div class="row bg-dark text-light">
                 <div class="col-12 justify-content-between align-items-center d-flex">
                     <h1>Scoreboard</h1>
-                    <button class="btn btn-danger">RESET</button>
+                    <button onclick="resetScore()" id="resetScore" class="btn m-3 btn-danger">RESET</button>
                 </div>
             </div>
         </div>
     </header>
 
     <main>
-        <div class="container-fluid">
-            <div class="row">
+        <div class="container-fluid d-flex justify-content-around align-items-center">
+            <div class="row d-flex justify-content-between align-items-center">
                 <div class="col-6 ">
-                    <button class="btn btn-dark text-primary m-3 p-3">Blue Side +1</button>
+                    <button onclick="updateBlueScore()" class="btn btn-dark text-primary m-3 p-3">Blue Side +1</button>
                 </div>
                 <div class="col-6 ">
-                    <button class="btn btn-dark text-danger m-3 p-3">Red Side +1</button>
+                    <button onclick="updateRedScore()" class="btn btn-dark text-danger m-3 p-3">Red Side +1</button>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row">
+            <div class="row bg-dark-subtle m-5 p-5">
                 <div class="col-12 d-flex justify-content-evenly">
-                    <h2>Blue: <span id="blueScore"></span></h2>
-                    <h2>Red: <span id="redScore"></span></h2>
-
+                    <h2 class="text-primary-emphasis">Blue: <span id="blueScore" class="text-primary">0</span></h2>
+                    <h2 class="text-danger-emphasis">Red: <span id="redScore" class="text-danger">0</span></h2>
                 </div>
             </div>
         </div>
