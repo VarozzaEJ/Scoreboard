@@ -1,0 +1,30 @@
+@keyframes color-changing {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: yellow;
+    }
+
+    50% {
+        color: blue;
+    }
+
+    100% {
+        color: green;
+    }
+}
+
+h1 {
+    color: red;
+    animation-name: color-changing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+body {
+    animation-name: color-changing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
