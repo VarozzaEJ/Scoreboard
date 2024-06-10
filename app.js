@@ -54,12 +54,12 @@ function checkMaxScore() {
     if (blueScore == 12) {
         console.log(`Blue Team Wins with ${blueScore} Points`)
         document.body.style.backgroundColor = "blue"
-        blueScoreElement.innerText = "WINS"
+        blueScoreElement.innerText = "WINS 🥶"
     }
     if (redScore == 12) {
         console.log(`Red Team Wins with ${redScore} Points`)
         document.body.style.backgroundColor = "red"
-        redScoreElement.innerText = "WINS"
+        redScoreElement.innerText = "WINS 🔥"
     }
     if (redScore == 13) {
         resetScore()
