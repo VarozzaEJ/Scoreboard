@@ -1,7 +1,6 @@
 let blueScore = 0
 let redScore = 0
 
-console.log(blueScore);
 
 function addBlueScore() {
     blueScore++
